@@ -1,0 +1,26 @@
+Arguments: 
+  /Users/viniciusvini/.nvm/versions/node/v20.10.0/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js add ../frontweb/src/pages/Admin/Employees/List/index.tsx
+
+PATH: 
+  /Users/viniciusvini/.nvm/versions/node/v20.10.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.10.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: ENOTDIR: not a directory, scandir '/Users/viniciusvini/Library/Caches/Yarn/v6/npm-sers-viniciusvini-ocuments-workspace-vscode-bds-reactjs-tests-frontweb-src-pages-dmin-mployees-ist-0.0.0-643e99e3-a3be-4815-945c-9fd04a4417f2-1708637770923/node_modules/Users/viniciusvini/Documents/workspace-vscode/bds-reactjs-tests/frontweb/src/pages/Admin/Employees/List'
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
