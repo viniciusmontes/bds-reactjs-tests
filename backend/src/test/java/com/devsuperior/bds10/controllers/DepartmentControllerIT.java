@@ -19,7 +19,7 @@ import com.devsuperior.bds10.tests.TokenUtil;
 @SpringBootTest
 @AutoConfigureMockMvc
 @Transactional
-public class DepartmentControllerIT {
+class DepartmentControllerIT {
 
 	@Autowired
 	private MockMvc mockMvc;
@@ -40,9 +40,9 @@ public class DepartmentControllerIT {
 		adminUsername = "bob@gmail.com";
 		adminPassword = "123456";
 	}
-	
-	@Test
-	public void findAllShouldReturnAllResourcesSortedByNameWhenAdminLogged() throws Exception {
+
+    @Test
+    void findAllShouldReturnAllResourcesSortedByNameWhenAdminLogged() throws Exception {
 		
 		String accessToken = tokenUtil.obtainAccessToken(mockMvc, adminUsername, adminPassword);
 		
@@ -56,9 +56,9 @@ public class DepartmentControllerIT {
 		result.andExpect(jsonPath("$[1].name").value("Sales"));
 		result.andExpect(jsonPath("$[2].name").value("Training"));
 	}
-	
-	@Test
-	public void findAllShouldReturnAllResourcesSortedByNameWhenOperatorLogged() throws Exception {
+
+    @Test
+    void findAllShouldReturnAllResourcesSortedByNameWhenOperatorLogged() throws Exception {
 		
 		String accessToken = tokenUtil.obtainAccessToken(mockMvc, operatorUsername, operatorPassword);
 		
@@ -72,9 +72,9 @@ public class DepartmentControllerIT {
 		result.andExpect(jsonPath("$[1].name").value("Sales"));
 		result.andExpect(jsonPath("$[2].name").value("Training"));
 	}
-	
-	@Test
-	public void findAllShouldReturn401WhenNoUserLogged() throws Exception {
+
+    @Test
+    void findAllShouldReturn401WhenNoUserLogged() throws Exception {
 		
 		ResultActions result =
 				mockMvc.perform(get("/departments")
